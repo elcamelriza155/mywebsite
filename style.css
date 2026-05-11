@@ -1,0 +1,455 @@
+/* Mommy Student Journey - beginner-friendly styles */
+
+:root{
+  --bg: white;          /* light warm */
+  --card: #ffffff;
+  --text: #2e2e2e;        /* dark gray */
+  --muted: #6b6b6b;
+  --pink: #f7b6c8;        /* soft pink */
+  --pink-dark: #e89ab1;
+  --cream: #fff1e6;       /* light beige/cream */
+  --brown: #b58b6a;       /* light brown */
+  --border: #ead7cf;
+  --shadow: 0 10px 25px rgba(0,0,0,.06);
+}
+
+*{ box-sizing: border-box; }
+padding
+html,body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+ 
+}
+
+
+body{
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  font-family: "Open Sans", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: var(--text);
+  background: linear-gradient(180deg, var(--bg), #ffffff);
+  font-weight: bolder;
+  font-size: 20px;
+ 
+}
+main{
+  flex:1;
+}
+
+img{
+   width: 100%; 
+   height: auto; 
+   display: block;
+   object-fit: cover;
+   object-position: top;
+   }
+
+
+
+.container{
+  width:100%;
+  max-width:1200px ;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 10px 15px;
+  min-height: 100vh;
+}
+.content {
+  flex:1;
+  
+}
+
+
+
+
+.boxed{
+  background: var(--card);
+  border: 2px solid var(--border);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  height: auto;
+  max-height: 100%;
+  min-height: 150px;
+}
+
+/* Navbar */
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 16px;
+  background:#B08AA4;
+  border-bottom: 2px solid var(--border);
+}
+
+.brand{
+  font-family: Poppins, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: .2px;
+  color:white;
+  text-decoration: none;
+}
+
+.nav-links{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+ 
+  flex-wrap: wrap;
+  
+  
+  
+  
+}
+
+.nav-links a{
+  display: block;
+  padding: 10px 12px;
+  border-radius: 10px;
+  text-decoration: none;
+  color:white;
+  font-weight: 600;
+}
+
+.nav-links a:hover{
+  background:#E8BFCF;
+  color:white;
+}
+
+.nav-links a.active{
+  background:#3A3A3A;
+  border: 1px solid var(--pink-dark);
+  width: fit-content;
+  left:0;
+}
+
+.menu-btn{
+  display: none;
+  border: 2px solid var(--border);
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px 12px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.menu-btn:hover{
+  background:#3A3A3A;
+  color:white;
+}
+
+/* Hero */
+.hero{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin:auto;
+  gap: 5px;
+  padding: 5px;
+  background-color: #FAF7F5;
+
+}
+
+.hero > div:first-child{
+  flex: 1.2;
+  min-width: 280px;
+  
+}
+
+.hero-media{
+  flex: 1;
+  min-width: 260px;
+}
+
+.hero h1{
+  font-family: Poppins, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  margin: 0 0 8px;
+  font-size: 34px;
+  line-height: 1.15;
+  font-size: 35px;
+  padding: 20px;
+}
+
+.hero p{
+  margin: 0 0 14px;
+  color:black;
+  font-size: 18px;
+  line-height: 1.6;
+  padding: 15px;
+  text-align: justify;
+}
+
+
+.hero-media{
+  border-radius: 14px;
+  border: 2px solid var(--border);
+ 
+ 
+}
+.hero-media img{
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  max-height: 510px;
+  object-fit:cover;
+  object-position:center 20%;
+  border-radius: 10px;
+  
+}
+.cta{
+  display: inline-block;
+  padding: 20px;
+  
+}
+
+.section{
+  padding: 20px;
+  border-top: 2px solid var(--border);
+
+  
+
+}
+
+.section h2{
+  font-family: Poppins, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  margin: 0 0 10px;
+  font-size: 22px;
+  
+}
+
+.cards{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.card{
+  border: 2px solid var(--border);
+  border-radius: 14px;
+  padding: 10px;
+  background: #fff;
+}
+
+.card h3{
+  margin: 0 0 6px;
+  font-family: Poppins, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+.card p{
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+/* Mom Life page (buttons + content) */
+.center-title{
+  text-align: center;
+  margin: 0 0 14px;
+  font-family: Poppins, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  
+  
+}
+
+.tab-buttons{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  
+}
+
+.tab-buttons button{
+  border: 2px solid var(--border);
+  background: #F6E7DD;
+  border-radius: 12px;
+  padding: 10px 14px;
+  cursor: pointer;
+  font-weight: 800;
+  gap:20px;
+
+}
+
+.tab-buttons button:hover{
+  background: rgba(247,182,200,.35);
+}
+
+.tab-buttons button.active{
+  background: var(--pink);
+  border-color: var(--pink-dark);
+}
+
+.tab-content{
+  display: none;
+  max-width: 100%;
+  margin:auto;
+  border: 2px solid var(--border);
+  border-radius: 14px;
+  padding: 10px;
+  background: #fff;
+  
+  
+}
+
+.tab-content.active{
+  display: block;
+}
+
+.tab-content h3{
+  margin: 0 0 8px;
+  font-family: Poppins, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  
+}
+
+.tab-content ul{
+  margin:0;
+  padding-left: 18px;
+  color: var(--muted);
+  line-height: 3.0;
+  width: 100%;
+  
+ 
+}
+
+
+/* Gallery */
+.gallery-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.photo img{
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+  border-radius: 12px;
+  transition: transform .3s ease;
+  cursor: pointer;
+}
+.photo img:hover{
+  transform: scale(1.05);
+}
+
+.photo figcaption{
+  padding: 10px 12px;
+  color: black;
+  border: solid 2px var(--border);
+  border-radius: 5px;
+}
+
+/* Contact */
+#contact {
+  padding: 40px;
+  gap:40px;
+  font-family: Arial;
+  border:solid 2px var(--border);
+  border-radius: 5px;
+  background:#EFEAF5;
+  font-size: 20px;
+  width: 100%;
+  line-height: 3.5;
+  
+  
+}
+
+#contact a {
+  color: blue;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+.btn{
+  margin-top: 12px;
+  display: inline-block;
+  padding: 11px 14px;
+  border-radius: 12px;
+  background: var(--pink);
+  border: 1px solid var(--pink-dark);
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.btn:hover{ filter: brightness(.98); }
+
+.footer{
+  padding: 20px;
+  border-top: 2px solid var(--border);
+  background:#B08AA4;
+  color:white;
+  text-align: center;
+  border-radius: 5px;
+}
+
+/* Responsive */
+@media (max-width: 850px){
+  .cards{ grid-template-columns: 1fr; }
+  .gallery-grid{ grid-template-columns: 1fr; }
+
+  .hero{
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-media{
+    order: -1; /* image on top */
+  }
+  @media(max-width:768px){
+    .content{
+      padding-bottom: 20px;
+    }
+  }
+
+  /* mobile menu */
+  .menu-btn{ display: block; }
+  @media (max-width: 768px) {
+  .nav-links a {
+    display: block;
+    margin: 5px; /* mao ni magpaliit sa highlight */
+    padding: 6px 12px;
+    border-radius: 8px;
+  }
+
+  .nav-links a:hover{
+    background-color:#E8BFCF;
+}
+.nav-links :active {
+  background-color:#3A3A3A ;
+}
+  .nav-links{
+    display: none;
+    width: 100%;
+    margin-top: 10px;
+    flex-direction: column;
+    
+   
+    padding: 15px;
+    border-radius: 10px;
+  }
+  
+
+  .nav-links.open{
+    display: flex;
+  }
+
+  .navbar{
+    flex-wrap: wrap;
+  }
+
+  
+}
+
+}
