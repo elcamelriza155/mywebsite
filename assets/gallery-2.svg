@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-label="Gallery photo placeholder 2">
+  <rect width="1200" height="900" rx="48" fill="#ffffff"/>
+  <rect x="80" y="80" width="1040" height="740" rx="40" fill="#fff7f3" stroke="#ead7cf" stroke-width="8"/>
+  <circle cx="410" cy="420" r="170" fill="#b58b6a" opacity="0.25"/>
+  <circle cx="740" cy="420" r="170" fill="#f7b6c8" opacity="0.45"/>
+  <rect x="180" y="650" width="840" height="34" rx="17" fill="#2e2e2e" opacity="0.14"/>
+</svg>
+
