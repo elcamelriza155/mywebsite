@@ -48,12 +48,3 @@ document.addEventListener("DOMContentLoaded", function () {
   setupMobileMenu();
   setupMomLifeTabs();
 });
-const menuBtn = document.getElementById("menuToggle");
-const navLinks = document.getElementById("navLinks");
-
-menuBtn.addEventListener("click", () => {
-  navLinks.classList.toggle("show");
-
-  const expanded = menuBtn.getAttribute("aria-expanded") === "true";
-  menuBtn.setAttribute("aria-expanded", !expanded);
-});
